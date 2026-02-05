@@ -48,7 +48,7 @@ app = FastAPI()
 # ============================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://risoflorai.netlify.app/"],  # Em produção coloque o domínio correto
+    allow_origins=["https://risoflorai.netlify.app"],  # Em produção coloque o domínio correto
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
