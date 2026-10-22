@@ -34,7 +34,7 @@ REGRAS:
 5. Ajude o usuário da melhor forma possível.
 """
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 
 app = FastAPI(title="RISOFLORAI API")
 
