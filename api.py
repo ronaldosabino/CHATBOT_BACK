@@ -146,3 +146,17 @@ def chat(request: MensagemRequest):
             status_code=502,
             detail="Não foi possível obter uma resposta do serviço de IA.",
         )
+
+
+# ============================
+# Executar servidor
+# ============================
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(
+        "api:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True
+    )
